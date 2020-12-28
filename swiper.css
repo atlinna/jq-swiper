@@ -1,0 +1,98 @@
+.jq-swiper-box>ul {
+    margin: 0;
+    padding: 0;
+}
+
+.jq-swiper-box>ul>li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.jq-swiper-box {
+    overflow: hidden;
+    position: relative;
+}
+
+.jq-swiper-content {
+    background-color: #eeeeee;
+}
+
+.jq-swiper-animate .jq-swiper-content {
+    position: relative;
+    left: 0;
+}
+
+.jq-swiper-animate .jq-swiper-content::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.jq-swiper-animate .jq-swiper-item {
+    float: left;
+}
+
+.jq-swiper-fade .jq-swiper-content {
+    position: relative;
+}
+
+.jq-swiper-fade .jq-swiper-item {
+    position: absolute;
+}
+
+.jq-swiper-btn {
+    transition: background-color 1s;
+    position: absolute;
+    width: 25px;
+    height: 35px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .15);
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.jq-swiper-rbtn {
+    right: -3px;
+    border-radius: 18px 0 0 18px;
+}
+
+.jq-swiper-lbtn {
+    left: -3px;
+    border-radius: 0 18px 18px 0;
+}
+
+.jq-swiper-btn:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.jq-swiper-spots {
+    /* width: 100%; */
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 4px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 20px;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+}
+
+.jq-swiper-spots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .4);
+    margin: 0 2px;
+}
+
+.jq-swiper-spots .jq-swiper-current {
+    background-color: #ffffff;
+}
